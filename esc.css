@@ -1,0 +1,135 @@
+* {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(http://sfwallpaper.com/images/cool-white-background-10.jpg);
+            font-family: 'Fugaz One', cursive;
+            background-size: cover;
+            .background-position: center;
+            .color: white;
+            
+        }
+        .menu-area li a {
+            text-decoration: none;
+        }
+
+        .menu-area li {
+            list-style-type: none;
+        }
+
+        .custom-padding{
+            padding-top: 25px;
+        }
+
+        nav {
+            position: relative;
+            width: calc(100% - 60px);
+            margin: 0 auto;
+            padding: 10px 0;
+            background: #333;
+            z-index: 1;
+            text-align: right;
+            padding-right: 2%;
+        }
+
+        .logo {
+            width: 15%;
+            float: left;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 25px;
+            text-align: left;
+            padding-left: 2%;
+
+        }
+
+        .menu-area li {
+            display: inline-block;
+        }
+
+        .menu-area a {
+            color: #fff;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: block;
+            padding: 0 25px;
+            font-size: 14px;
+            line-height: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .menu-area a:hover {
+            background: white;
+            color: black;
+        }
+
+        .menu-area a:hover:after {
+            transform: translateY(-50%) rotate(-35deg);
+        }
+
+        nav:before {
+            position: absolute;
+            content: '';
+            border-top: 10px solid #333;
+            border-right: 10px solid #333;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            top: 100%;
+            left: 0;
+        }
+
+        nav:after {
+            position: absolute;
+            content: '';
+            border-top: 10px solid #333;
+            border-left: 10px solid #333;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            top: 100%;
+            right: 0;
+        }
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
